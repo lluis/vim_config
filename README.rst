@@ -2,6 +2,7 @@ my Vim config files
 ===================
 
 ::
+
   mv ~/.vim ~/.vim.old
   git clone git://github.com/lluis/vim_config.git ~/.vim
   cd ~/.vim
