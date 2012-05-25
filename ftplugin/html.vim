@@ -144,7 +144,6 @@ endfunction
 set notimeout
 inoremap <buffer> ;; ;
 inoremap <buffer> ;<! <!--  --><Esc>F<Space>i
-inoremap <buffer> ;<% <%=  %><Esc>F<Space>i
 
 inoremap <buffer> ;head <head><Esc>o<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><Esc>o</head><Esc>O
 inoremap <buffer> ;title <title></title><Esc>7hi

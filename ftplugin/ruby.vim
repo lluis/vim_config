@@ -20,3 +20,6 @@ if !exists( "*RubyEndToken" )
 endif
 
 imap <buffer> <CR> <C-R>=RubyEndToken()<CR>
+
+inoremap <buffer> ;< <%=  %><Esc>F<Space>i
+inoremap <buffer> ;> <%  -%><Esc>F<Space>i
