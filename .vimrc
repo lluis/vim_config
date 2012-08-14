@@ -108,16 +108,19 @@ vmap f <Esc>`>a' %><Esc>`<i<%= t '<Esc>
 vmap g <Esc>`>a' %><Esc>`<hhi<%= t '<Esc>
 vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
 
+" Treure el destacat actual a l'apretar espai, per exemple al cercar
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" amaga els comentaris, zo per obrirlos i zc per tancar-los
+"set fdm=expr
+"set fde=getline(v:lnum)=~'^\\s*#'?1:getline(prevnonblank(v:lnum))=~'^\\s*#'?1:getline(nextnonblank(v:lnum))=~'^\\s*#'?1:0
+
+" completar fitxers com al shell
+set wildmode=longest,list:longest,list:full
+
 if exists("did_load_filetypes")
   finish
 endif
 augroup filetypedetect
   au! BufRead,BufNewFile *.pp     setfiletype puppet
 augroup END
-
-" amaga els comentaris, zo per obrirlos i zc per tancar-los
-set fdm=expr
-set fde=getline(v:lnum)=~'^\\s*#'?1:getline(prevnonblank(v:lnum))=~'^\\s*#'?1:getline(nextnonblank(v:lnum))=~'^\\s*#'?1:0
-
-" completar fitxers com al shell
-set wildmode=longest,list:longest,list:full
