@@ -25,3 +25,10 @@ imap <buffer> <CR> <C-R>=RubyEndToken()<CR>
 
 inoremap <buffer> ;< <%=  %><Esc>F<Space>i
 inoremap <buffer> ;> <%  -%><Esc>F<Space>i
+
+" red background when line >80 chars
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
