@@ -43,6 +43,12 @@ map Q gq
 " text is lost and it only works for putting the current register.
 "vnoremap p "_dp
 
+" Modern terminals support 256 colors, but sometimes you need to kick Vim to
+" recognize this
+if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
+  set t_Co=256
+endif
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
@@ -104,6 +110,17 @@ set title
 set autochdir
 set clipboard=unnamed
 
+" ignorecase plus smartcase make searches case-insensitive except when you
+" include upper-case characters
+set ignorecase
+set smartcase
+
+" powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set encoding=utf-8
+set laststatus=2
+set fillchars+=stl:\ ,stlnc:\
+
 " cometes en mode visual block, :help VISUAL
 vmap " <Esc>`>a"<Esc>hlx`<i"<Esc>hlx
 
@@ -111,6 +128,13 @@ vmap " <Esc>`>a"<Esc>hlx`<i"<Esc>hlx
 vmap f <Esc>`>a' %><Esc>`<i<%= t '<Esc>
 vmap g <Esc>`>a' %><Esc>`<hhi<%= t '<Esc>
 vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
+
+" next/previous buffer
+":nmap <C-n> :bnext<CR>
+":nmap <C-p> :bprev<CR>
+
+" file navigation
+:nmap <C-a> :NERDTreeToggle<CR>
 
 " Treure el destacat actual a l'apretar espai, per exemple al cercar
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -128,3 +152,4 @@ endif
 augroup filetypedetect
   au! BufRead,BufNewFile *.pp     setfiletype puppet
 augroup END
+
