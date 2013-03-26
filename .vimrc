@@ -116,10 +116,20 @@ set ignorecase
 set smartcase
 
 " powerline
+" gap on arrow https://github.com/Lokaltog/powerline/issues/359
+" in gitconfig set color=auto to solve branch display issues
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-set encoding=utf-8
 set laststatus=2
-set fillchars+=stl:\ ,stlnc:\
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+" escape insert mode immediately
+if ! has('gui_running')
+    set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
+endif
 
 " cometes en mode visual block, :help VISUAL
 vmap " <Esc>`>a"<Esc>hlx`<i"<Esc>hlx
