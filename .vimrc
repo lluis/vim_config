@@ -157,6 +157,9 @@ let NERDTreeQuitOnOpen = 1
 " completar fitxers com al shell
 set wildmode=longest,list:longest,list:full
 
+" vimdiff: ignore spaces
+set diffopt+=iwhite
+
 if exists("did_load_filetypes")
   finish
 endif
