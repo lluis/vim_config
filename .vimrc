@@ -140,8 +140,9 @@ vmap g <Esc>`>a' %><Esc>`<hhi<%= t '<Esc>
 vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
 
 " next/previous buffer
-":nmap <C-n> :bnext<CR>
-":nmap <C-p> :bprev<CR>
+:nmap <C-n> :bnext<CR>
+:nmap <C-b> :bprev<CR>
+:nmap , :CtrlPBuffer<CR>
 
 " file navigation
 :nmap <C-a> :NERDTreeToggle<CR>
