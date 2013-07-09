@@ -1,2 +1,1 @@
-set autoindent
-set tabstop=2
+/usr/share/vim/addons/ftplugin/puppet.vim
