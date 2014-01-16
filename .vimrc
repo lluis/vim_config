@@ -39,6 +39,15 @@ set incsearch           " do incremental searching
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
+" navigate split windows with ALT + Arrows
+nmap <A-Down> <C-W><C-J>
+nmap <A-Up> <C-W><C-K>
+nmap <A-Right> <C-W><C-L>
+nmap <A-Left> <C-W><C-H>
+" More natural split opening
+set splitbelow
+set splitright
+
 " This is an alternative that also works in block mode, but the deleted
 " text is lost and it only works for putting the current register.
 "vnoremap p "_dp
@@ -167,4 +176,3 @@ endif
 augroup filetypedetect
   au! BufRead,BufNewFile *.pp     setfiletype puppet
 augroup END
-
