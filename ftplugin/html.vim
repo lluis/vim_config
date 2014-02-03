@@ -183,7 +183,7 @@ inoremap <buffer> ;ah <a href="" title=""></a><Esc>14hi
 inoremap <buffer> ;am <a href="mailto:"></a><Esc>F"i
 inoremap <buffer> ;an <a name=""></a><Esc>F"i
 
-inoremap <buffer> ;div <div id=""><Esc>o</div><Esc>k3la
+inoremap <buffer> ;div <div class=""><Esc>o</div><Esc>k3la
 inoremap <buffer> ;span <span class=""></span><Esc>6hi
 
 inoremap <buffer> ;table <table><Esc>o</table><Esc>O
