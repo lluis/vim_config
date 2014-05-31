@@ -143,8 +143,8 @@ endif
 " cometes en mode visual block, :help VISUAL
 vmap " <Esc>`>a"<Esc>hlx`<i"<Esc>hlx
 
-"vmap f <Esc>`>a'.t %>><Esc>hlx`<i<%= ''<Esc>hlx
-vmap f <Esc>`>a' %><Esc>`<i<%= t '<Esc>
+vmap f <Esc>`>a'.t %>><Esc>hlx`<i<%= ''<Esc>hlx
+"vmap f <Esc>`>a' %><Esc>`<i<%= t '<Esc>
 vmap g <Esc>`>a' %><Esc>`<hhi<%= t '<Esc>
 vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
 
