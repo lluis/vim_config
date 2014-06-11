@@ -262,3 +262,6 @@ vnoremap <buffer> ;R <C-C>`>a ==<C-V>><Esc>`<i<!== <Esc>
 " inoremenu 40.405 Html.email\ \ \ \ \ \ \ \ \ \ \ F4 <a href="mailto:"></a><Left><Left><Left><Left><Left><Left>
 " vnoremenu 40.406 Html.embrace\ \ \ \ \ \ \ \ \ F1 <C-C>a <Esc>`>i</><Esc>`<i<><Esc>$x`<a
 " inoremenu 40.408 Html.put\ image\ \ \ \ \ \ \ F5 <IMG SRC=""><Left><Left>
+
+inoremap <buffer> ;le <legend></legend><ESC>F<i
+inoremap <buffer> ;fi <fieldset><Esc>o</fieldset><Esc>O<legend></legend><ESC>F<i
