@@ -65,6 +65,21 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+" Create unexisting directories on save
+" http://stackoverflow.com/questions/4292733/vim-creating-parent-directories-on-save
+function s:MkNonExDir(file, buf)
+  if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+    let dir=fnamemodify(a:file, ':h')
+    if !isdirectory(dir)
+      call mkdir(dir, 'p')
+    endif
+  endif
+endfunction
+augroup BWCCreateDir
+  autocmd!
+  autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+augroup END
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
@@ -118,7 +133,7 @@ set title
 
 set autochdir
 if has('unnamedplus')
-  set clipboard^=unnamedplus
+  set clipboard^=unnamed,unnamedplus
 else
   set clipboard^=unnamed
 endif
