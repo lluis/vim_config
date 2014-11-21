@@ -132,11 +132,11 @@ set modelines=20
 set title
 
 set autochdir
-if has('unnamedplus')
-  set clipboard^=unnamed,unnamedplus
-else
+"if has('unnamedplus')
+"  set clipboard^=unnamed,unnamedplus
+"else
   set clipboard^=unnamed
-endif
+"endif
 
 " ignorecase plus smartcase make searches case-insensitive except when you
 " include upper-case characters
