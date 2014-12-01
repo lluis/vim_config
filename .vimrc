@@ -135,8 +135,9 @@ set autochdir
 "if has('unnamedplus')
 "  set clipboard^=unnamed,unnamedplus
 "else
-  set clipboard^=unnamed
+"  set clipboard^=unnamed
 "endif
+set clipboard=unnamed
 
 " ignorecase plus smartcase make searches case-insensitive except when you
 " include upper-case characters
