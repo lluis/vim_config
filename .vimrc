@@ -173,6 +173,10 @@ vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
 :nmap <C-b> :bprev<CR>
 :nmap , :CtrlPBuffer<CR>
 
+" tabs
+:nmap <S-Right> :tabnext<CR>
+:nmap <S-Left> :tabprev<CR>
+
 " file navigation
 :nmap <C-a> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
