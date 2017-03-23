@@ -187,6 +187,9 @@ inoremap <buffer> ;div <div class=""><Esc>o</div><Esc>k6la
 inoremap <buffer> ;span <span class=""></span><Esc>6hi
 
 inoremap <buffer> ;table <table><Esc>o</table><Esc>O
+inoremap <buffer> ;thead <thead><Esc>o</thead><Esc>O
+inoremap <buffer> ;tbody <tbody><Esc>o</tbody><Esc>O
+inoremap <buffer> ;tfoot <tfoot><Esc>o</tfoot><Esc>O
 inoremap <buffer> ;td <td></td><Esc>F<i
 inoremap <buffer> ;th <th></th><Esc>F<i
 inoremap <buffer> ;tr <tr><Esc>o</tr><Esc>O
