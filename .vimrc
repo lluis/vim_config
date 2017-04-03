@@ -194,6 +194,13 @@ set wildmode=longest,list:longest,list:full
 " vimdiff: ignore spaces
 set diffopt+=iwhite
 
+" Match all forms of brackets in pairs (including angle brackets)
+set matchpairs=(:),{:},[:],<:>
+
+" If the Vim buffer for a file doesn't have any changes and Vim detects the
+" file has been altered, quietly update it
+set autoread
+
 if exists("did_load_filetypes")
   finish
 endif
