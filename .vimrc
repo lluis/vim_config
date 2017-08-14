@@ -181,6 +181,9 @@ vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
 :nmap <C-a> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
+" ignores pel CtrlP
+let g:ctrlp_custom_ignore = 'node_modules\|build\|tmp'
+
 " Treure el destacat actual a l'apretar espai, per exemple al cercar
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
