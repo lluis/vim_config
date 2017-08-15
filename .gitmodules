@@ -22,3 +22,6 @@
 [submodule "bundle/ferret"]
 	path = bundle/ferret
 	url = https://github.com/wincent/ferret.git
+[submodule "bundle/vim-vue"]
+    path = bundle/vim-vue
+    url = https://github.com/posva/vim-vue.git
