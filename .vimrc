@@ -182,7 +182,7 @@ vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
 let NERDTreeQuitOnOpen = 1
 
 " ignores pel CtrlP
-let g:ctrlp_custom_ignore = 'node_modules\|build\|tmp'
+let g:ctrlp_custom_ignore = 'node_modules\|build\|tmp\|files'
 " max files pel CtrlP
 let g:ctrlp_max_files=0
 "let g:ctrlp_max_depth=100
