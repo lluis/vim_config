@@ -182,10 +182,14 @@ vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
 let NERDTreeQuitOnOpen = 1
 
 " ignores pel CtrlP
-let g:ctrlp_custom_ignore = 'node_modules\|build\|tmp\|files'
+let g:ctrlp_custom_ignore = 'node_modules\|build\|tmp\|files\|coverage\|\~$'
 " max files pel CtrlP
 let g:ctrlp_max_files=0
 "let g:ctrlp_max_depth=100
+
+" https://stackoverflow.com/questions/21010029
+" amagar backups a l'explorador
+let g:netrw_list_hide= '.*\.swp$,\~$$'
 
 " Treure el destacat actual a l'apretar espai, per exemple al cercar
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
