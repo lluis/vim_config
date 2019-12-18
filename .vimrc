@@ -203,6 +203,16 @@ set wildmode=longest,list:longest,list:full
 
 " vimdiff: ignore spaces
 set diffopt+=iwhite
+" vimdiff: colors
+if &diff
+"  colorscheme jellybeans
+"  colorscheme custom
+"  colorscheme evening
+  highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+  highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+  highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+  highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
+endif
 
 " Match all forms of brackets in pairs (including angle brackets)
 set matchpairs=(:),{:},[:],<:>
