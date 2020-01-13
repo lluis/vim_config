@@ -10,5 +10,6 @@ my Vim config files
   git submodule update
   cd ~/
   ln -s .vim/.vimrc .
+  sudo apt install vim-puppet vim-fugitive
 
 
