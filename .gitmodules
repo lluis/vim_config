@@ -31,3 +31,6 @@
 [submodule "bundle/eslint"]
 	path = bundle/eslint
 	url = https://github.com/eslint/eslint
+[submodule "bundle/commentary"]
+	path = bundle/commentary
+	url = https://tpope.io/vim/commentary.git
