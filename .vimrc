@@ -181,6 +181,13 @@ vmap V <Esc>`>a') <Esc>hlx`<i T_(''<Esc>hlx
 :nmap <C-a> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
+" gitgutter
+set signcolumn=yes
+set updatetime=100
+" https://github.com/airblade/vim-gitgutter/issues/696
+highlight! link SignColumn LineNr
+autocmd ColorScheme * highlight! link SignColumn LineNr
+
 " ignores pel CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|build\|tmp\|files\|coverage\|\~$'
 " max files pel CtrlP
