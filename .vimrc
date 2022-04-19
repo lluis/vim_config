@@ -189,7 +189,10 @@ highlight! link SignColumn LineNr
 autocmd ColorScheme * highlight! link SignColumn LineNr
 
 " ignores pel CtrlP
-let g:ctrlp_custom_ignore = 'node_modules\|build\|tmp\|files\|coverage\|\~$'
+let g:ctrlp_custom_ignore = {
+      \ 'dir': 'node_modules$\|build$\|tmp$\|files$\|coverage$',
+      \ 'file': '\~$'
+      \ }
 " max files pel CtrlP
 let g:ctrlp_max_files=0
 "let g:ctrlp_max_depth=100
