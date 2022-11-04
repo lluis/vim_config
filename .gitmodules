@@ -43,3 +43,6 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "bundle/colorizer"]
+	path = bundle/colorizer
+	url = git@github.com:chrisbra/Colorizer.git

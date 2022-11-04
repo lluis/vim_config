@@ -37,3 +37,5 @@ endif
 " http://stackoverflow.com/questions/29635150
 let g:syntastic_eruby_ruby_quiet_messages =
     \ {'regex': 'possibly useless use of .* in void context'}
+
+let b:ale_linters = []
