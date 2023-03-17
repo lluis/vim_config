@@ -46,3 +46,6 @@
 [submodule "bundle/colorizer"]
 	path = bundle/colorizer
 	url = git@github.com:chrisbra/Colorizer.git
+[submodule "bundle/vim-context-commentstring"]
+	path = bundle/vim-context-commentstring
+	url = git@github.com:suy/vim-context-commentstring.git
