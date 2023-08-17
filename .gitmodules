@@ -49,3 +49,9 @@
 [submodule "bundle/vim-context-commentstring"]
 	path = bundle/vim-context-commentstring
 	url = git@github.com:suy/vim-context-commentstring.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/vim-jsx-pretty"]
+	path = bundle/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
