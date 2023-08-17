@@ -12,4 +12,19 @@ my Vim config files
   ln -s .vim/.vimrc .
   sudo apt install vim-puppet vim-fugitive
 
+Add a plugin
+------------
+
+::
+
+  cd ~/.vim/
+  git submodule add https://github.com/pangloss/vim-javascript.git bundle/vim-javascript
+
+Update plugins
+--------------
+
+::
+
+  git submodule foreach git pull
+  git add bundle
 
