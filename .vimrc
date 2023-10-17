@@ -224,6 +224,9 @@ if &diff
   highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
 endif
 
+" Make lines with linter errors readable
+highlight SpellBad ctermfg=0
+
 " Match all forms of brackets in pairs (including angle brackets)
 set matchpairs=(:),{:},[:],<:>
 
