@@ -226,6 +226,7 @@ endif
 
 " Make lines with linter errors readable
 highlight SpellBad ctermfg=0
+highlight SpellBad ctermbg=3
 
 " Match all forms of brackets in pairs (including angle brackets)
 set matchpairs=(:),{:},[:],<:>
