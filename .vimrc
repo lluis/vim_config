@@ -152,12 +152,12 @@ set laststatus=2
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 " escape insert mode immediately
 if ! has('gui_running')
-    set ttimeoutlen=10
-    augroup FastEscape
-        autocmd!
-        au InsertEnter * set timeoutlen=0
-        au InsertLeave * set timeoutlen=1000
-    augroup END
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
 endif
 
 " cometes en mode visual block, :help VISUAL
@@ -215,9 +215,6 @@ set wildmode=longest,list:longest,list:full
 set diffopt+=iwhite
 " vimdiff: colors
 if &diff
-"  colorscheme jellybeans
-"  colorscheme custom
-"  colorscheme evening
   highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
   highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
   highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
